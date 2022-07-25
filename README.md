@@ -1,1 +1,1 @@
-![](https://komarev.com/ghpvc/?username=mdrakash)
+[![visits](https://github-visit-counter.herokuapp.com/{mdrakash}/{repo}/visits.svg)](#)
