@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+header{
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content{
+    text-align: center;
+}
+
+.header__heading{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.header__btn{
+    color: white;
+    display: inline-block;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 1.2rem 2.6rem;
+    margin: .3rem;
+    border: .1rem solid transparent;
+    border-radius: 2rem;
+    font-size: .9rem;
+    line-height: 1;
+}
