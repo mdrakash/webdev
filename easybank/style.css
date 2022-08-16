@@ -1,0 +1,123 @@
+/* VARIABLES */
+:root {
+
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Public Sans', 'sans-serif';
+    font-size: 10px;
+}
+body{
+    width: 100%;
+}
+p{
+    font-size: 1.6rem;
+    color:var(--grayish-blue) ;
+    line-height: 1.6;
+}
+section{
+    padding: 5rem 0;
+}
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+/* Utility Classes */
+.u-mb.small{
+    margin-bottom: 1.6rem;
+}
+.u-mb.medium{
+    margin-bottom: 3rem;
+}
+.u-mb.large{
+    margin-bottom: 5rem;
+}
+
+/* Header Styles */
+header{
+    width: 100%;
+    height: 7.5rem;
+    padding: 2.5rem 0;
+    background-color: var(--white);
+    position: relative;
+    z-index: 999;
+}
+.logo{
+    height: 2.3rem;
+}
+.check{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    position: relative;
+    color: var(--grayish-blue);
+    padding: 2rem;
+}
+.nav-link a:hover{
+    color: var(--dark-blue);
+}
+.nav-link a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .3rem;
+    background:linear-gradient(to right,var(--lime-green),var(--bright-cyan));
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all .3s;
+}
+.nav-link a:hover:before{
+    opacity: 1;
+    transform: scaleX(1);
+}
+.btn{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1.3rem 3rem;
+    background:linear-gradient(to right,var(--lime-green),var(--bright-cyan));
+    border-radius: 5rem;
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all .3s;
+}
+.btn:hover{
+    opacity: 0.8;
+    transform: scaleX(1.1);
+}
